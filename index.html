@@ -627,9 +627,9 @@
           </p>
           <p>
             {{movementX}} and {{movementY}} must be zero for all mouse events
-            except `mousemove`. All motion data must be delivered via
-            `mousemove` events such that between any two mouse events
-            `earlierEvent` and `currentEvent` the value of
+            except `mousemove` and `pointermove`. All motion data must be
+            delivered via `mousemove` events such that between any two mouse
+            events `earlierEvent` and `currentEvent` the value of
             `currentEvent.screenX - earlierEvent.screenX` is equivalent to the
             sum of all {{movementX}} in the events after `earlierEvent`, with
             the exception of when screenX can not be updated because the
